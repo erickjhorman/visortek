@@ -8,6 +8,9 @@ import { FooterComponent } from '../common/footer/footer.component';
 import { ContentComponent } from './home/content/content.component';
 import { MainSliderComponent } from '../common/main-slider/main-slider.component';
 
+//Materia module
+import {MaterialModule} from '@app/material.module';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,8 @@ import { MainSliderComponent } from '../common/main-slider/main-slider.component
    
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
   ]
 })
 export class HomeModule { }
