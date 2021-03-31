@@ -11,7 +11,9 @@ import { MainSliderComponent } from '../common/main-slider/main-slider.component
 //Materia module
 import {MaterialModule} from '@app/material.module';
 
-
+//ng-bootstrap module
+import {NgBootstrapModule} from '@app/ng-bootstrap.module';
+import { HomeProductComponent } from '../common/home-product/home-product.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -19,11 +21,13 @@ import {MaterialModule} from '@app/material.module';
     FooterComponent,
     ContentComponent,
     MainSliderComponent,
+    HomeProductComponent,
    
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    NgBootstrapModule
   ]
 })
 export class HomeModule { }
