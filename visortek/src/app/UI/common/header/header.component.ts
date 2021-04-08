@@ -8,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+   links: any[] = [
+    {
+      name: "Catalogos",
+      path: "catalogue"
+    },
+    {
+      name: "Acerca de nosotros",
+      path: "about"
+    },
+    {
+      name: "Nuestos productos",
+      path: "product"
+    }
+ 
+  ];
+
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.links);
+    
   }
 
 }

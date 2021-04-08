@@ -1,11 +1,19 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-//components
-import {HomeComponent} from '@UI/home/home/home.component';
+
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }
+  {
+    path: '',
+    loadChildren: () => import(`@UI/home/home.module`).then(module => module.HomeModule)
+  },
+  {
+    path: 'catalogue',
+    loadChildren: () => import(`@UI/product/product.module`).then(module => module.ProductModule
+    )
+  },
+  // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
