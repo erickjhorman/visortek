@@ -8,6 +8,7 @@ import { FooterComponent } from '@UI/common/footer/footer.component';
 import { HeaderComponent } from '@UI/common/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -23,7 +24,8 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     NgbModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

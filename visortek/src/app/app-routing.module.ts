@@ -9,8 +9,13 @@ const routes: Routes = [
     loadChildren: () => import(`@UI/home/home.module`).then(module => module.HomeModule)
   },
   {
-    path: 'catalogue',
+    path: 'product',
     loadChildren: () => import(`@UI/product/product.module`).then(module => module.ProductModule
+    )
+  },
+  {
+    path: 'about',
+    loadChildren: () => import(`@UI/aboutus/aboutus.module`).then(module => module.AboutusModule
     )
   },
   // { path: '**', component: PageNotFoundComponent }

@@ -1,5 +1,27 @@
-<div class="fixed-bottom">
-    <mat-toolbar color="primary">
-    </mat-toolbar>
-</div>
-  
+<mat-toolbar color="primary">
+    <div class="container pb-6">
+        <div class="row">
+            <div class="col-md-4">
+                <mat-nav-list>
+                    <mat-list-item *ngFor="let link of links">
+                        <a matLine [routerLink]="'/'+ link.path" routerLinkActive="active">{{ link.name }}</a>
+                    </mat-list-item>
+                </mat-nav-list>
+
+            </div>
+            <div class="col-md-4">
+                <div class="container pt-4">
+                    <fa-icon [icon]="faFacebook" size="2x" class="mr-3"></fa-icon>
+                    <fa-icon [icon]="faInstagram" size="2x"></fa-icon>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+    </div>
+    <a id="whatsapp" href="https://api.whatsapp.com/send?phone=573206293608&text=Bienvenido%20a%20Visortek"
+        target="_blank" rel="noopener noreferrer">
+        <img src="https://res.cloudinary.com/dequvdgav/image/upload/v1588808769/visorteck/avatars/whatsapp-icon_ykl7ul.png"
+            [ngStyle]="{'height': '75px'}" alt="Siguenos en whatsapp ahora">
+    </a>
+</mat-toolbar>

@@ -8,20 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-   links: any[] = [
+  links: any[] = [
     {
-      name: "Catalogos",
-      path: "catalogue"
+      name: "Productos",
+      path: "product"
     },
+
     {
       name: "Acerca de nosotros",
       path: "about"
     },
-    {
-      name: "Nuestos productos",
-      path: "product"
-    }
- 
+
+
   ];
 
 
@@ -29,7 +27,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.links);
-    
+
   }
 
 }
