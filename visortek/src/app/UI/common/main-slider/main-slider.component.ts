@@ -14,10 +14,12 @@ export class MainSliderComponent implements OnInit {
 
   ngOnInit(): void {
     this.images = [{
-      image: "https://res.cloudinary.com/dequvdgav/image/upload/v1571806956/visorteck/1_hlpann.jpg"
+      image: "https://res.cloudinary.com/dwocz6qj8/image/upload/v1620517086/visortek/home/6_wwwhmn.webp",
+      alt: "The best sale"
     },
     {
-      image: "https://res.cloudinary.com/dequvdgav/image/upload/v1571806956/visorteck/1_hlpann.jpg"
+      image: "https://res.cloudinary.com/dwocz6qj8/image/upload/v1620517580/visortek/home/7_gpte6t.webp",
+      alt: "The best sale 2"
     }
   ]
     this.corouselConfi();

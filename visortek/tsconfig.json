@@ -19,6 +19,7 @@
     "paths": {
       "@UI/*":["src/app/UI/*"],
       "@app/*":["src/app/*"],
+      "@env":["src/environments/environment"]
      }
   }
 }
