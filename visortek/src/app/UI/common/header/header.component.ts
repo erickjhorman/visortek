@@ -13,13 +13,15 @@ export class HeaderComponent implements OnInit {
       name: "Productos",
       path: "product"
     },
+    {
+      name: "Contactenos",
+      path: "contact"
+    },
 
     {
       name: "Acerca de nosotros",
       path: "about"
     },
-
-
   ];
 
 

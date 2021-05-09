@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faFacebook,faInstagram } from '@fortawesome/free-brands-svg-icons';
 
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -21,12 +22,15 @@ export class FooterComponent implements OnInit {
       name: "Productos",
       path: "product"
     },
-
+    
     {
       name: "Acerca de nosotros",
       path: "about"
     },
-
+    {
+      name: "Contactenos",
+      path: "contact"
+    },
 
   ];
 

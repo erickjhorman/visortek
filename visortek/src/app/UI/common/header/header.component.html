@@ -1,6 +1,7 @@
 <mat-toolbar color=primary>
-  <span  [routerLink]="''" routerLinkActive="active">Visortek</span>
-  <span class="example-spacer"></span>
+  <img id="visortek-svg-logo" class="rounded-circle ml-5"  src="https://res.cloudinary.com/dwocz6qj8/image/upload/v1620525437/visortek/home/visortek-logo-svg_nl9iwh.svg" alt="visortek logo svg">
+  <span  [routerLink]="''" id="company-name">Visortek Industrias SAS</span>
+  <span  id="navbar-right-spacer"></span>
   <mat-nav-list>
     <mat-list-item *ngFor="let link of links">
        <a matLine [routerLink]="'/'+ link.path" routerLinkActive="active">{{ link.name }}</a>

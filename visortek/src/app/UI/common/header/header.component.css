@@ -1,4 +1,4 @@
-.example-spacer {
+#navbar-right-spacer {
     flex: 1 1 auto;
   }
 
@@ -7,3 +7,12 @@
     height: auto;
     width: auto;
   }
+
+#company-name{
+  color: black;
+  padding-left: 0.7rem;
+  font-size: larger;
+} 
+#visortek-svg-logo{
+  height: 50px;
+}

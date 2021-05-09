@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-    <div class="container pb-6">
+    <div class="container pb-3">
         <div class="row">
             <div class="col-md-4">
                 <mat-nav-list>
@@ -7,7 +7,6 @@
                         <a matLine [routerLink]="'/'+ link.path" routerLinkActive="active">{{ link.name }}</a>
                     </mat-list-item>
                 </mat-nav-list>
-
             </div>
             <div class="col-md-4">
                 <div class="container pt-4">
@@ -17,11 +16,28 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-
+        <div class="row pb-3">
+            <div class="col-md-12">
+                <mat-divider></mat-divider>
+            </div>
+        </div>
+        <div class="row  align-items-center">
+            <div class="col-md-6">
+                <ul class="list-inline text-center h6">
+                    <li class="list-inline-item">Politica de privacidad</li>
+                    <li class="list-inline-item">FQA</li>
+                    <li class="list-inline-item"></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <p class="h6" >Copyright © 2021 Visortek Industrias SAS. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </div>
     <a id="whatsapp" href="https://api.whatsapp.com/send?phone=573206293608&text=Bienvenido%20a%20Visortek"
         target="_blank" rel="noopener noreferrer">
         <img src="https://res.cloudinary.com/dequvdgav/image/upload/v1588808769/visorteck/avatars/whatsapp-icon_ykl7ul.png"
             [ngStyle]="{'height': '75px'}" alt="Siguenos en whatsapp ahora">
     </a>
+
 </mat-toolbar>

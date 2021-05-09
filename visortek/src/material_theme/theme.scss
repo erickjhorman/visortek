@@ -1,0 +1,13 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$custom-typography: mat-typography-config($font-family: '"sans-serif;');
+@include mat-core($custom-typography);
+
+
+$visortek-primary: mat-palette($mat-blue,A400 );
+$visortek-accent:  mat-palette($mat-pink, 700, 900, A100);
+$visortek-warn:    mat-palette($mat-deep-orange);
+$visortek-theme: mat-light-theme($visortek-primary, $visortek-accent, $visortek-warn);
+
+@include angular-material-theme($visortek-theme);
