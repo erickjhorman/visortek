@@ -10,8 +10,10 @@
             </div>
             <div class="col-md-4">
                 <div class="container pt-4">
-                    <fa-icon [icon]="faFacebook" size="2x" class="mr-3"></fa-icon>
-                    <fa-icon [icon]="faInstagram" size="2x"></fa-icon>
+                    <p>Nuestras redes sociales</p>
+                     <a href="https://www.facebook.com/jhorman.romero.5"  target="_blank" rel="noopener noreferrer">facebook</a>
+                    <fa-icon id="instragram" [icon]="faFacebook" size="2x" class="mr-3"></fa-icon>
+                    <fa-icon [icon]="faInstagram" size="2x" [spin]="isAnimated" [classes]="['instragram-icon']" (mouseover)="isAnimated=!isAnimated"></fa-icon>
                 </div>
             </div>
             <div class="col-md-4"></div>
@@ -21,16 +23,16 @@
                 <mat-divider></mat-divider>
             </div>
         </div>
-        <div class="row  align-items-center">
-            <div class="col-md-6">
-                <ul class="list-inline text-center h6">
-                    <li class="list-inline-item">Politica de privacidad</li>
-                    <li class="list-inline-item">FQA</li>
-                    <li class="list-inline-item"></li>
-                </ul>
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <mat-nav-list  class="list-horizontal">
+                    <mat-list-item *ngFor="let listBotton of listsBotton">
+                        <a matLine [routerLink]="'/'+ listBotton.path">{{ listBotton.name }}</a>
+                    </mat-list-item>
+                </mat-nav-list>
             </div>
-            <div class="col-md-6">
-                <p class="h6" >Copyright © 2021 Visortek Industrias SAS. Todos los derechos reservados.</p>
+            <div class="col-md-4">
+                <span class="footer-last-list">Copyright © 2021 Visortek Industrias SAS. Todos los derechos reservados.</span>
             </div>
         </div>
     </div>

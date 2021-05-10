@@ -1,3 +1,10 @@
-.example-card {
+#product-card {
     max-width: 250px;
 }
+#product-card:hover {
+    height: auto;
+    transform: scale(1.1);
+    transition: all 0.1s;
+    visibility: visible;
+  }
+  

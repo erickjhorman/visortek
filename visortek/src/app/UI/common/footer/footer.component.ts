@@ -1,17 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { faFacebook,faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { Component, OnInit,ViewEncapsulation } from '@angular/core';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  styleUrls: ['./footer.component.css'],
+  
 })
 export class FooterComponent implements OnInit {
 
   faFacebook = faFacebook;
   faInstagram = faInstagram;
-
+  isAnimated : boolean;
 
   links: any[] = [
     {
@@ -22,7 +24,7 @@ export class FooterComponent implements OnInit {
       name: "Productos",
       path: "product"
     },
-    
+
     {
       name: "Acerca de nosotros",
       path: "about"
@@ -31,7 +33,17 @@ export class FooterComponent implements OnInit {
       name: "Contactenos",
       path: "contact"
     },
+  ];
 
+  listsBotton: any[] = [
+    {
+      name: "Politica de privacidad",
+      path: "private-policy"
+    },
+    {
+      name: "Contactenos",
+      path: "FQA"
+    },
   ];
 
   constructor() { }
