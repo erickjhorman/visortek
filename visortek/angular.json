@@ -152,5 +152,10 @@
       }
     }
   },
-  "defaultProject": "visortek"
+  "defaultProject": "visortek",
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "scss"
+    }
+  }
 }

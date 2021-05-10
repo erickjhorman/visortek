@@ -1,0 +1,45 @@
+app-footer {
+    .container-footer {
+
+        width: 100%;
+        display: flex;
+
+        mat-toolbar {
+            height: auto;
+            margin-top: 1.4rem;
+        }
+
+        .container {
+            padding-bottom: 5rem;
+        }
+
+        .footer-last-list {
+            font-size: 0.9rem;
+        }
+
+        .list-horizontal .mat-list-item {
+            display: inline-block;
+            height: auto;
+            width: auto;
+            font-size: 0.9rem;
+            color: black;
+        }
+
+        .mat-toolbar.mat-primary {
+            color: black;
+        }
+
+        fa-icon {
+            svg {
+                transition: all .5s ease-in-out;
+            }
+
+            svg:hover {
+                color: white !important;
+                transform: rotate(360deg) scale(1.1)
+            }
+        }
+
+    }
+
+}

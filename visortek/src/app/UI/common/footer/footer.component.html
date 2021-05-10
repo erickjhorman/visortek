@@ -1,45 +1,52 @@
-<mat-toolbar color="primary">
-    <div class="container pb-3">
-        <div class="row">
-            <div class="col-md-4">
-                <mat-nav-list>
-                    <mat-list-item *ngFor="let link of links">
-                        <a matLine [routerLink]="'/'+ link.path" routerLinkActive="active">{{ link.name }}</a>
-                    </mat-list-item>
-                </mat-nav-list>
+<div class="container-footer">
+
+
+    <mat-toolbar color="primary">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <mat-nav-list>
+                        <mat-list-item *ngFor="let link of links">
+                            <a matLine [routerLink]="'/'+ link.path" routerLinkActive="active">{{ link.name }}</a>
+                        </mat-list-item>
+                    </mat-nav-list>
+                </div>
+                <div class="col-md-4">
+                    <div class="container pt-4">
+                        <p>Nuestras redes sociales</p>
+                        <a href="https://www.facebook.com/jhorman.romero.5" target="_blank"
+                            rel="noopener noreferrer">facebook</a>
+                        <fa-icon [icon]="faFacebook" size="2x" class="mr-3" (click)="openUrl('https://www.facebook.com/jhorman.romero.5')"></fa-icon>
+                        <fa-icon [icon]="faInstagram" size="2x" (click)="openUrl('https://www.facebook.com/jhorman.romero.5')"></fa-icon>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
             </div>
-            <div class="col-md-4">
-                <div class="container pt-4">
-                    <p>Nuestras redes sociales</p>
-                     <a href="https://www.facebook.com/jhorman.romero.5"  target="_blank" rel="noopener noreferrer">facebook</a>
-                    <fa-icon id="instragram" [icon]="faFacebook" size="2x" class="mr-3"></fa-icon>
-                    <fa-icon [icon]="faInstagram" size="2x" [spin]="isAnimated" [classes]="['instragram-icon']" (mouseover)="isAnimated=!isAnimated"></fa-icon>
+            <div class="row pb-3">
+                <div class="col-md-12">
+                    <mat-divider></mat-divider>
                 </div>
             </div>
-            <div class="col-md-4"></div>
-        </div>
-        <div class="row pb-3">
-            <div class="col-md-12">
-                <mat-divider></mat-divider>
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <mat-nav-list class="list-horizontal">
+                        <mat-list-item *ngFor="let listBotton of listsBotton">
+                            <a matLine [routerLink]="'/'+ listBotton.path">{{ listBotton.name }}</a>
+                        </mat-list-item>
+                    </mat-nav-list>
+                </div>
+                <div class="col-md-4">
+                    <span class="footer-last-list">Copyright © 2021 Visortek Industrias SAS. Todos los derechos
+                        reservados.</span>
+                </div>
             </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-md-8">
-                <mat-nav-list  class="list-horizontal">
-                    <mat-list-item *ngFor="let listBotton of listsBotton">
-                        <a matLine [routerLink]="'/'+ listBotton.path">{{ listBotton.name }}</a>
-                    </mat-list-item>
-                </mat-nav-list>
-            </div>
-            <div class="col-md-4">
-                <span class="footer-last-list">Copyright © 2021 Visortek Industrias SAS. Todos los derechos reservados.</span>
-            </div>
-        </div>
-    </div>
-    <a id="whatsapp" href="https://api.whatsapp.com/send?phone=573206293608&text=Bienvenido%20a%20Visortek"
-        target="_blank" rel="noopener noreferrer">
-        <img src="https://res.cloudinary.com/dequvdgav/image/upload/v1588808769/visorteck/avatars/whatsapp-icon_ykl7ul.png"
-            [ngStyle]="{'height': '75px'}" alt="Siguenos en whatsapp ahora">
-    </a>
+        <a id="whatsapp" href="https://api.whatsapp.com/send?phone=573206293608&text=Bienvenido%20a%20Visortek"
+            target="_blank" rel="noopener noreferrer">
+            <img src="https://res.cloudinary.com/dequvdgav/image/upload/v1588808769/visorteck/avatars/whatsapp-icon_ykl7ul.png"
+                [ngStyle]="{'height': '75px'}" alt="Siguenos en whatsapp ahora">
+        </a>
 
-</mat-toolbar>
+    </mat-toolbar>
+
+</div>

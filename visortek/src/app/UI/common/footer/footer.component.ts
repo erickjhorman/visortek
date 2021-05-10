@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -6,14 +6,14 @@ import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css'],
-  
+  styleUrls: ['./footer.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class FooterComponent implements OnInit {
 
   faFacebook = faFacebook;
   faInstagram = faInstagram;
-  isAnimated : boolean;
+  isAnimated: boolean;
 
   links: any[] = [
     {
@@ -51,4 +51,7 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openUrl(url: string) {
+    window.open(url);
+  }
 }
