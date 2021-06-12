@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '@app/domain/models/Products/gateway/IProducts';
+import * as IProduct from '@app/domain/models/Product/IProduct';
 
 @Component({
   selector: 'app-home-product',
@@ -8,7 +8,7 @@ import { Product } from '@app/domain/models/Products/gateway/IProducts';
 })
 export class HomeProductComponent implements OnInit {
 
-   products: Product[] = [
+   products: IProduct.Product[] = [
     { 
       name:"Shaft 821", 
       description:"The best one in the world", 

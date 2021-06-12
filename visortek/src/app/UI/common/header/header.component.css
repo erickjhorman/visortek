@@ -2,12 +2,13 @@
     flex: 1 1 auto;
   }
 
-  .mat-list-item.mat-list-item {
-    display: inline-block;
+#list-center{
+    display: inline-flex;
     height: auto;
     width: auto;
-  }
-
+    font-size: 2rem;
+    color: yellow;
+}
 #company-name{
   color: black;
   padding-left: 0.7rem;

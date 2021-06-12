@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,6 +11,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+
+import {ProductGateway} from '@app/domain/models/Product/gateway/product-gateway';
+
+import {ProductApiService} from '@app/infrastructure/driven-adapter/product/product-api.service';
 
 
 @NgModule({
@@ -25,9 +32,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NgbModule,
     MatToolbarModule,
     MatListModule,
-    FontAwesomeModule
+    MatMenuModule,
+    MatButtonModule,
+    FontAwesomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: ProductGateway, useClass: ProductApiService}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

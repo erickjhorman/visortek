@@ -9,7 +9,7 @@ const routes: Routes = [
     loadChildren: () => import(`@UI/home/home.module`).then(module => module.HomeModule)
   },
   {
-    path: 'product',
+    path: 'products/:id',
     loadChildren: () => import(`@UI/product/product.module`).then(module => module.ProductModule
     )
   },

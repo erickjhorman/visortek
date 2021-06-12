@@ -17,9 +17,15 @@
       "dom"
     ],
     "paths": {
-      "@UI/*":["src/app/UI/*"],
-      "@app/*":["src/app/*"],
-      "@env":["src/environments/environment"]
-     }
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@UI/*": [
+        "src/app/UI/*"
+      ],
+      "@env": [
+        "src/environments/environment"
+      ]
+    }
   }
 }

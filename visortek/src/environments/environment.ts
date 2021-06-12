@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  name: 'dev'
+  name: 'dev',
+  api_url: '/assets/products/visores/shaft.json',
 };
 
 /*
