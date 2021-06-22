@@ -1,5 +1,6 @@
 export interface Product {
-    name: string,
-    image: string,
-    description: string
+    name?: string,
+    cover?: string,
+    description?: string
+    images?: []
 }

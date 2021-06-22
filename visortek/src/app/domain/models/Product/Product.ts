@@ -1,5 +1,6 @@
 export class Product {
     name: string;
-    image: string;
+    cover: string;
     description: string
+    images?: []
 }

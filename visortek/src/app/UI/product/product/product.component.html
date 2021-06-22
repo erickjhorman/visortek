@@ -1,1 +1,23 @@
-{{ products | json }}
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let product of products">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>{{product.name}}</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image [src]="product.cover">
+                <mat-card-content>
+                    <p>{{product.description}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <div class="text-center">
+                        <button mat-button  (click)="onShowImages(product.id)" >Ver imagenes</button>
+                    </div>
+                </mat-card-actions>
+            </mat-card>
+
+        </div>
+    </div>
+</div>
