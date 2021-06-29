@@ -1,51 +1,44 @@
 [
     {
+        "id": "1",
         "name": "Shaft 581",
-        "imagen": "",
-        "description": " "
+        "cover": "https://res.cloudinary.com/dwocz6qj8/image/upload/v1624324514/visortek/visor/shaft/shaft-581/1_zxkv8n.jpg",
+        "images": {
+            "id": "1",
+            "images": [
+                "https://res.cloudinary.com/dwocz6qj8/image/upload/v1624324514/visortek/visor/shaft/shaft-581/1_zxkv8n.jpg",
+                "https://res.cloudinary.com/dwocz6qj8/image/upload/v1624324543/visortek/visor/shaft/shaft-581/20191210_111920_burned_umtrzh.jpg",
+                "https://res.cloudinary.com/dwocz6qj8/image/upload/v1624324529/visortek/visor/shaft/shaft-581/20191210_112844_burned_n5d6ms.jpg",
+                "https://res.cloudinary.com/dwocz6qj8/image/upload/v1624324543/visortek/visor/shaft/shaft-581/20191210_111920_burned_umtrzh.jpg"
+            ]
+        },
+        "description": "La mejor comodidad al mejor precio."
     },
     {
-        "name": "Shaft 581",
-        "imagen": "",
-        "description": " "
+        "id": "2",
+        "name": "Shaft 520",
+        "cover": "https://res.cloudinary.com/dwocz6qj8/image/upload/v1617158638/visortek/520_rvfywz.jpg",
+        "images": {
+            "id": "2",
+            "images": [
+                "https://res.cloudinary.com/dwocz6qj8/image/upload/v1624414564/visortek/visor/shaft/shaft-520/7_vd14ps.jpg",
+                "https://res.cloudinary.com/dwocz6qj8/image/upload/v1624414563/visortek/visor/shaft/shaft-520/5_dr7dcj.jpg"
+            ]
+        },
+        "description": " The best one "
     },
     {
-        "name": "Shaft 581",
-        "imagen": "",
-        "description": " "
-    },
-    {
-        "name": "Shaft 581",
-        "imagen": "",
-        "description": " "
-    },
-    {
-        "name": "Shaft 581",
-        "imagen": "",
-        "description": " "
-    },
-    {
-        "name": "Shaft 581",
-        "imagen": "",
-        "description": " "
-    },
-    {
-        "name": "Shaft 581",
-        "imagen": "",
-        "description": " "
-    },
-    {
-        "name": "Shaft 581",
-        "imagen": "",
-        "description": " "
-    },{
-        "name": "Shaft 581",
-        "imagen": "",
-        "description": " "
-    },
-    {
-        "name": "Shaft 581",
-        "imagen": "",
-        "description": " "
+        "id": "3",
+        "name": "Shaft 570",
+        "cover": "https://res.cloudinary.com/dwocz6qj8/image/upload/v1624414695/visortek/visor/shaft/shaft-570/12_qfghzk.jpg",
+        "images": {
+            "id": "3",
+            "images": [
+                "https://res.cloudinary.com/dwocz6qj8/image/upload/v1624414695/visortek/visor/shaft/shaft-570/12_qfghzk.jpg",
+                "https://res.cloudinary.com/dwocz6qj8/image/upload/v1624414695/visortek/visor/shaft/shaft-570/11_wsusl7.jpg",
+                "https://res.cloudinary.com/dwocz6qj8/image/upload/v1624414695/visortek/visor/shaft/shaft-570/13_exnyim.jpg"
+            ]
+        },
+        "description": " The best one "
     }
 ]

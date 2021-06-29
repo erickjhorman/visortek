@@ -48,7 +48,7 @@ export class ProductComponent implements OnInit {
     const images = this.images.find(items => items.id === id);
     this.dialog.open(ProductDetailsComponent, {
       data: {images: images.images},
-      height: '430px',
+      height: '500px',
       width:'600px'
     });
   }
